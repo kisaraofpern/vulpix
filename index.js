@@ -20,7 +20,6 @@ app.get('/showPokemon', (req, res) => {
 
 app.post('/choose', (req, res) => {
   const id = req.body.id;
-  console.log(id);
   store
     .choose({ id })
     .then((data) => res.json(data)); // Returns the id of the Pokemon that was chosen.
@@ -28,12 +27,11 @@ app.post('/choose', (req, res) => {
 
 app.post('/notChoose', (req, res) => {
   const id = req.body.id;
-  console.log(id);
   store
     .notChoose({ id })
     .then((data) => res.json(data)); // Returns the id of the Pokemon that was notChosen.
 });
 
 app.listen(7555, () => {
-  console.log('Vulpix server running http://localhost:7555');
+  console.log('Vulpix Server running http://localhost:7555.');
 });
