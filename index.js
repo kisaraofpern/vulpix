@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const store = require('./store');
+const port = process.env.PORT || 7555;
 
 const app = express();
 app.use(express.static('public'));
@@ -32,6 +33,6 @@ app.post('/notChoose', (req, res) => {
     .then((data) => res.json(data)); // Returns the id of the Pokemon that was notChosen.
 });
 
-app.listen(7555, () => {
-  console.log('Vulpix Server running http://localhost:7555.');
+app.listen(port, () => {
+  console.log(`Vulpix Server running ${port}.`);
 });
