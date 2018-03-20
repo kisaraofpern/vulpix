@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>An App That Lets You Like or Dislike Things</title>
+  <title>Tinder But For Pokemon</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <form class='Create User'>
-    <h1>Create a new user</h1>
-    <input type='text' class='username' placeholder='username'>
-    <input type='password' class='password' placeholder='password'>
-    <input type='submit' value='Create user'>
-  </form>
+  
+  <h1>Tinder But For Pokemon</h1>
+  <h3 class="name"></h3>
+    <div class="PokemonContainer">
+      <div class="buttonContainer">
+        <button type="button" class="notChoose">I Don't Choose You</button>
+        <div class="total notChoose"></div>
+      </div>
+      <div class="contentContainer">
+        <div class="picture"></div>
+      </div>
+      <div class="buttonContainer">
+        <button type="button" class="choose">I Choose You!</button>
+        <div class="total choose"></div>
+      </div>
+  </div>
+  
+  <div class="bottomButtonContainer">
+    <button type="button" class="another">Another Pokemon</button>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src='/app.js'></script>
 </body>
 </html>
