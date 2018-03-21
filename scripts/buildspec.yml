@@ -27,7 +27,7 @@ phases:
       # - command
 #artifacts:
   #files:
-    # - location
+    - index.js
     # - location
   #discard-paths: yes
   #base-directory: location
